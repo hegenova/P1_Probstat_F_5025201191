@@ -5,11 +5,13 @@
 geo <- dgeom(3,0.2)
 geo
 ```
+fungsi disribusi geo
 ### b
 ```
 geom <- rgeom(10000,0.2)
 mean(geom == 3)
 ```
+generate distribusi geo serta mencari mean x==3
 ### c
 ```
 j=0
@@ -44,11 +46,13 @@ mean
 var=(1-0.2)/(0.2^2)
 var
 ```
+mean dan varian distribusi geo
 ## 2
 ### a
 ```
 dbinom(4,20,0.2)
 ```
+fungsi distribusi binom
 ### b
 ```
 plot(0:20, dbinom(0:20,20,0.2),type="h")
@@ -59,12 +63,14 @@ plot(0:20, dbinom(0:20,20,0.2),type="h")
 mean(dbinom(0:20,20,0.2))
 var(dbinom(0:20,20,0.2))
 ```
+mean dan varian distribusi binom
 ##3
 ### a
 ```
 pois <- dpois(6,4.5)
 pois
 ```
+fungsi distribusi poisson
 ### b
 ```
 poi <- rpois(365,4.5)
@@ -98,12 +104,14 @@ mean
 var=4.5
 var
 ```
+mean dan varian distribusi poisson
 ## 4
 ### a
 ```
 chi <- dchisq(2, 10)
 chi
 ```
+fungsi distribusi chisq
 ### b
 ```
 chis <- rchisq(100, 10)
@@ -117,12 +125,14 @@ mean
 var=10*2
 var
 ```
+mean dan varian distribusi chisq
 ## 5
 ### a
 ```
 exp <- dexp(rexp(1,3),3)
 exp
 ```
+fungsi distribusi eksponen
 ### b
 ```
 hist(rexp(10,3))
@@ -142,6 +152,7 @@ mean
 var=3^2
 var
 ```
+mean dan varian distribusi eksponen
 ## 6
 ### a
 ```
@@ -151,6 +162,7 @@ z_score <- (nor-xnor)/8
 z_score
 plot(nor)
 ```
+fungsi, z-score distribusi normal
 ![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.53.png)
 ### b
 ```
@@ -162,3 +174,4 @@ hist(rnorm(100,50,8), breaks = 50, main = "5025201191_BurhanudinRifa_F_DNHistogr
 var=8^2
 var
 ```
+varian distribusi normal

@@ -35,12 +35,130 @@ kode diatas digunakan untuk menunjukan persentase perbedaan antara p menggunakan
 ```
 hist(geom)
 ```
-https://github.com/hegenova/P1_Probstat_F_5025201191/blob/main/gambar/Screen%20Shot%202022-04-10%20at%2018.21.53.png
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.21.53.png)
 
 ### e
 ```
 mean=1/0.2
 mean
 var=(1-0.2)/(0.2^2)
+var
+```
+## 2
+### a
+```
+dbinom(4,20,0.2)
+```
+### b
+```
+plot(0:20, dbinom(0:20,20,0.2),type="h")
+```
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.02.png)
+### c
+```
+mean(dbinom(0:20,20,0.2))
+var(dbinom(0:20,20,0.2))
+```
+##3
+### a
+```
+pois <- dpois(6,4.5)
+pois
+```
+### b
+```
+poi <- rpois(365,4.5)
+hist(poi)
+```
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.11.png)
+### c
+```
+i=0
+for (val in poi) {
+  if(val == 6){
+    i=i+1
+  }
+}
+i=i/365
+i
+if(pois>i){
+  pois=((pois-i)/pois)*100
+  pois
+} else {
+  i=((i-pois)/i)*100
+  i
+}
+```
+kesimpulan yang didapatkan adalah hasilnya hampir sama, nilai p nya
+bisa dilihat persentase perbedaannya semakin banyak datanya semakin kecil dan konsisten perbedaannya
+### d
+```
+mean=4.5
+mean
+var=4.5
+var
+```
+## 4
+### a
+```
+chi <- dchisq(2, 10)
+chi
+```
+### b
+```
+chis <- rchisq(100, 10)
+hist(chis)
+```
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.19.png)
+### c
+```
+mean=10
+mean
+var=10*2
+var
+```
+## 5
+### a
+```
+exp <- dexp(rexp(1,3),3)
+exp
+```
+### b
+```
+hist(rexp(10,3))
+ex <- rexp(100,3)
+hist(ex)
+hist(rexp(1000,3))
+hist(rexp(10000,3))
+```
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.26.png)
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.33.png)
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.40.png)
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.46.png)
+### c
+```
+mean=3
+mean
+var=3^2
+var
+```
+## 6
+### a
+```
+xnor <- mean(nor)
+dnorm(xnor,50,8)
+z_score <- (nor-xnor)/8
+z_score
+plot(nor)
+```
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.22.53.png)
+### b
+```
+hist(rnorm(100,50,8), breaks = 50, main = "5025201191_BurhanudinRifa_F_DNHistogram")
+```
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.23.00.png)
+### c
+```
+var=8^2
 var
 ```

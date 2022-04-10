@@ -175,3 +175,8 @@ var=8^2
 var
 ```
 varian distribusi normal
+
+# output program pada R
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.50.15.png)
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.50.30.png)
+![](gambar/Screen%20Shot%202022-04-10%20at%2018.50.44.png)

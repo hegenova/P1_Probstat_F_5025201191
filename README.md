@@ -35,6 +35,8 @@ kode diatas digunakan untuk menunjukan persentase perbedaan antara p menggunakan
 ```
 hist(geom)
 ```
+https://github.com/hegenova/P1_Probstat_F_5025201191/blob/main/gambar/Screen%20Shot%202022-04-10%20at%2018.21.53.png
+
 ### e
 ```
 mean=1/0.2
